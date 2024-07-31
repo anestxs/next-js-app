@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import clsx from 'clsx';
 import { Field } from 'formik';
 
 export interface InputFieldProps
@@ -18,9 +17,9 @@ export default function InputField({ label, id, ...rest }: InputFieldProps) {
         </label>
       )}
       <Field
-        id={id}
         {...rest}
-        className="p-3 h-11 text-sm rounded border-gray-300 shadow"
+        id={id}
+        className="p-3 h-11 text-sm rounded border border-gray-300 shadow"
       />
     </div>
   );
